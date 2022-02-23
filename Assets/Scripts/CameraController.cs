@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
 public class CameraController : MonoBehaviour
 {
+    [SerializeField]
     private Transform player;
     public float yOffSet;
     public float zOffSet;
@@ -17,4 +15,3 @@ public class CameraController : MonoBehaviour
         transform.position = new Vector3(player.position.x, player.position.y + yOffSet, player.position.z + zOffSet);
     }
 }
-
